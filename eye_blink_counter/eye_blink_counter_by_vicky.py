@@ -27,9 +27,10 @@ try:
 except:                     # If we get any error in import it will reinstall or if stuck on no module error it will install newly from Pipy
     
     print("can't find necessary modules . wait for a minute to install")
-
     os.system("pip install opencv-python") 
     os.system("pip install mediapipe")
+    import mediapipe as mp
+    import cv2
 
 import math # It is used to do some math calcution
 import time # It is used to do time related works
